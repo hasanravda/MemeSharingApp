@@ -1,13 +1,13 @@
 # Meme Sharing App 🚀
 
-Welcome to our Meme Sharing App! This app is designed to bring joy and laughter by providing a seamless platform to discover, share, and enjoy memes from various sources.
+Welcome to Meme Sharing App! This app is designed to bring joy and laughter by providing a seamless platform to discover, share, and enjoy memes from Reddit.
 
 ## Features
 
 - **Fetch Memes:** Utilizes an open-source API to fetch memes from Reddit, ensuring a diverse and entertaining collection.
 - **Subreddit Search:** Allows users to discover memes by searching for specific subreddits, enhancing the variety of content available.
 - **Firebase Authentication:** Securely manages user Sign Up and Login processes, ensuring data safety and authentication.
-- **Swipe Gestures:** Navigate through memes effortlessly with swipe gestures - swipe right to left for the next meme, swipe up to share the current one!
+- **Swipe Gestures:** Navigate through memes effortlessly with swipe gestures - swipe left for the next meme, swipe up to share the current one!
 - **History Page:** Provides a Reddit-style interface to scroll through recent memes, share old favorites, and enjoy a trip down meme memory lane.
 - **SQLite Database:** Stores meme history for a personalized user experience, keeping track of previously viewed memes.
 - **Smooth Navigation:** Intuitive navigation menu for seamless movement between the home and history pages.
@@ -44,5 +44,5 @@ To get started with the app, follow these steps:
 
 ## Feedback
 
-We're continuously working to enhance the app. Your feedback and suggestions are valuable! Feel free to raise issues or contribute through pull requests.
+I am continuously working to enhance the app. Your feedback and suggestions are valuable! Feel free to raise issues or contribute through pull requests.
 
