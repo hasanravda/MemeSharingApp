@@ -25,9 +25,12 @@ Welcome to our Meme Sharing App! This app is designed to bring joy and laughter 
 
 Here are some screenshots from the app:
 
-![1 Home](https://github.com/hasanravda/MemeSharingApp/assets/73700675/d48be42d-a6a8-4c24-b4a5-dfcfca37d5d8)![2 History Recent](https://github.com/hasanravda/MemeSharingApp/assets/73700675/1c3e365b-bdae-4a42-8ab0-06bffad9b714)
-![3 Navigation menu](https://github.com/hasanravda/MemeSharingApp/assets/73700675/fdef706f-af6a-4837-b7ef-edd20cf03b32)![4 Login](https://github.com/hasanravda/MemeSharingApp/assets/73700675/f519d41e-5e73-48f7-b288-6a187d6cc379)
-![5 Sign up](https://github.com/hasanravda/MemeSharingApp/assets/73700675/95b1d4a9-c1b8-4012-886d-7ead1affd4cd)![6 Share](https://github.com/hasanravda/MemeSharingApp/assets/73700675/f6edd558-44b7-469e-8826-ff0bde479632)
+![1 Home](https://github.com/hasanravda/MemeSharingApp/assets/73700675/6d701564-f36f-4109-8f52-575bf4ae2ae5)
+![2 History Recent](https://github.com/hasanravda/MemeSharingApp/assets/73700675/1c3e365b-bdae-4a42-8ab0-06bffad9b714)
+![3 Navigation menu](https://github.com/hasanravda/MemeSharingApp/assets/73700675/fdef706f-af6a-4837-b7ef-edd20cf03b32)
+![4 Login](https://github.com/hasanravda/MemeSharingApp/assets/73700675/f519d41e-5e73-48f7-b288-6a187d6cc379)
+![5 Sign up](https://github.com/hasanravda/MemeSharingApp/assets/73700675/95b1d4a9-c1b8-4012-886d-7ead1affd4cd)
+![6 Share](https://github.com/hasanravda/MemeSharingApp/assets/73700675/f6edd558-44b7-469e-8826-ff0bde479632)
 
 
 ## Getting Started
