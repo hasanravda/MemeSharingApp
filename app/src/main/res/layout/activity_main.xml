@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="right"
+    android:background="@color/meme_background"
+
+    >
+
+<RelativeLayout
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/meme_background"
+    >
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignBottom="@+id/memeHeadText">-->
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignBottom="@+id/memeHeadText"-->
+<!--            android:background="@color/meme_background" />-->
+
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+    <TextView
+        android:id="@+id/memeHeadText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="Meme Sharing App"
+        android:visibility="invisible"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/memeImage"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/memeHeadText"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginHorizontal="15dp"-->
+<!--        android:layout_marginBottom="120dp"-->
+<!--        tools:srcCompat="@tools:sample/avatars" />-->
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/SearchSubreddit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Search Subreddit"
+        android:textColorHint="@color/white"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/memeHeadText"
+        android:layout_gravity="center"
+        android:weightSum="10"
+        android:layout_marginHorizontal="15dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/memeImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            tools:srcCompat="@tools:sample/avatars"
+            />
+
+        <ImageView
+            android:id="@+id/like"
+            android:layout_width="50dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_favorite_border_24"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:backgroundTint="@color/purple_200"
+        />
+
+    <LinearLayout
+        android:id="@+id/meme_Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/shareBtn"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/button_color"
+            android:text="Share"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nextBtn"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple_200"
+            android:onClick="nextMeme"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:elevation="4dp"
+        android:layout_height="wrap_content"
+        android:background="@color/meme_background"
+        app:titleTextColor="@color/white"/>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="270dp"
+        android:layout_gravity="start"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/header_layout"
+        app:menu="@menu/navigation_menu"
+        app:itemIconPadding="20dp"
+        app:itemIconSize="28dp"
+        >
+        <LinearLayout
+            android:id="@+id/logoutLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:padding="19dp"
+            android:layout_marginLeft="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_power_settings_new_24"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="20dp" />
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#131313"
+    tools:context=".MainActivity">
+
+<!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#121212">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/post_clear"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Clear History"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="18sp" />-->
+<!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+    <TextView
+        android:id="@+id/emptyPost_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:text="Wow, such empty !"/>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
